@@ -40,3 +40,20 @@
 #     garden_count.append(summ)
 # garden_count.append(garden[-2] + garden[-1] + garden[0])
 # print(f'Максимальное число ягод - {max(garden_count)}')
+
+#----- рещение с семинара
+
+# n = int(input())  #  колличество кустов
+# array = [int(i) for i in input().split()][:n]  # проходим по всем элеиентам до n
+# max_summa = 0 #
+# for i in range(1, len(array)-1): # проходим по эементам с 1 до предпоследноего
+#     if max_summa < array[i-1] + array[i] + array[i-1]:
+#         max_summa = array[i-1] + array[i] + array[i-1]
+#
+# if max_summa < array[0] + array[1] + array[len(array)-1]:
+#     max_summa = array[0] + array[1] + array[len(array) - 1]
+# if max_summa < array[0] + array[len(array)-1] + array[len(array)-2]:
+#     max_summa = array[0] + array[len(array) - 1] + array[len(array) - 2]
+# print(max_summa)
+
+
